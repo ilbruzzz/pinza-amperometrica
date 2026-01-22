@@ -2,16 +2,14 @@
 Energy Monitor IoT open source. Stack: ESP8266, sensore CT, ESPHome e Home Assistant. Repository con codice sensore e interfaccia grafica per la visualizzazione del consumo istantaneo, totale giornaliero e costo in tempo reale.
 
 ## Necessario
-- 1 ESP8266
-- 1 condensatore 10μF (Elettrolitico)
-- 2 resistenze 10kΩ
-- Pinza amperometrica YHDC SCT-013
-- Cavi jumper
+| Componenti | Dettaglio Saldatura |
+| :--- | :--- |
+| <ul><li>1 ESP8266</li><li>1 condensatore 10μF (Elettrolitico)</li><li>2 resistenze 10kΩ</li><li>Pinza amperometrica YHDC SCT-013</li><li>Cavi jumper</li></ul> | <img src="image/Collegamento.jpeg" width="250"> |
 
 ### Scelta della pinza ampeometrica
 Il dimensionamento del sensore di corrente è stato effettuato cercando il miglior compromesso tra range di misurazione e risoluzione. Per ambienti domestici standard con contratto di fornitura da 3 kW, le correnti raramente superano i 16-20 Ampere. L'utilizzo di un sensore con fondo scala a 100A avrebbe ridotto la sensibilità ai bassi carichi. Per la mia abitazione sitmando i consumi medi ho scelto il modello SCT-013-030 (range 0-30A, output 0-1V), che garantisce un'elevata accuratezza nella lettura dei consumi ridotti tipici dell'abitazione, mantenendo comunque un margine di sicurezza per carichi fino a circa 6,9 kW.
 
-### Schema di Collegamento
+## Schema di Collegamento
 
 ```text
        ESP8266 3.3V
@@ -93,3 +91,8 @@ L'installazione prevede l'inserimento del sensore nel quadro elettrico generale.
 - **Pericolo Elettrico: Spegnere sempre l'interruttore generale prima di aprire il quadro.**
 - Posizionamento Pinza: Poiché questo codice calcola la potenza apparente (I * 230V) per utenze passive, il verso della freccia sulla pinza è indifferente. *Se si monitora un impianto fotovoltaico (bidirezionale), sarà necessario verificare il verso per distinguere importazione ed esportazione.*
 - **Isolamento: Assicurarsi che tutte le parti del circuito a bassa tensione (ESP8266 e cavi) siano ben isolate e non entrino in contatto con le barre di rame o i morsetti a 230V del quadro.**
+
+# Galleria
+| Quadro Elettrico (Raw) | Installazione Completa | Visualizzazione Hassio |
+| :---: | :---: | :---: |
+| <img src="image/Quadro_elettrico_(raw).jpeg" width="300" alt="Quadro Raw"> | <img src="image/Quadro_elettrico_completo.jpeg" width="300" alt="Quadro Completo"> | <img src="image/Visualizzazione_hassio.png" width="300" alt="Hassio"> |
