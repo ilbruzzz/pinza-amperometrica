@@ -87,3 +87,9 @@ sensor:
     unit_of_measurement: kWh
     icon: mdi:counter
 ```
+
+# Installazione e sicurezza
+L'installazione prevede l'inserimento del sensore nel quadro elettrico generale.
+- **Pericolo Elettrico: Spegnere sempre l'interruttore generale prima di aprire il quadro.**
+- Posizionamento Pinza: Poiché questo codice calcola la potenza apparente (I * 230V) per utenze passive, il verso della freccia sulla pinza è indifferente. *Se si monitora un impianto fotovoltaico (bidirezionale), sarà necessario verificare il verso per distinguere importazione ed esportazione.*
+- **Isolamento: Assicurarsi che tutte le parti del circuito a bassa tensione (ESP8266 e cavi) siano ben isolate e non entrino in contatto con le barre di rame o i morsetti a 230V del quadro.**
