@@ -84,7 +84,7 @@ sensor:
 
 ```yaml
   - platform: total_daily_energy
-    name: "Energia Consumata Oggi"
+    name: "Energia Oggi"
     power_id: power_watts
     filters:
       # Converte da Wh a kWh
@@ -96,7 +96,7 @@ sensor:
 
 ```yaml
 - platform: template
-    name: "Costo Giornaliero"
+    name: "Spesa oggi"
     unit_of_measurement: "€"
     accuracy_decimals: 2
     icon: "mdi:currency-eur"
