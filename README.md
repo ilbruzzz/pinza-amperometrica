@@ -46,7 +46,7 @@ time:
 sensor:
   - platform: ct_clamp
     sensor: adc_sensor
-    name: "Corrente Misurata"
+    name: "Potenza attuale"
     id: measured_current
     update_interval: 5s  # Consigliato: 5s. 
                          # Evita di riempire il DB di hassio e riduce il carico sull'ESP. 
