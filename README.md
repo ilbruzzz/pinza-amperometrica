@@ -74,3 +74,16 @@ sensor:
       # Azzera se il consumo è inferiore a 5W
       - lambda: if (x < 5.0) return 0.0; else return x;
 ```
+
+### Conversione in kWh (si resetta ogni giorno)
+
+```yaml
+  - platform: total_daily_energy
+    name: "Energia Consumata Oggi"
+    power_id: power_watts
+    filters:
+      # Converte da Wh a kWh
+      - multiply: 0.001
+    unit_of_measurement: kWh
+    icon: mdi:counter
+```
