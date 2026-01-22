@@ -24,11 +24,11 @@ Il dimensionamento del sensore di corrente è stato effettuato cercando il migli
     |           |           |
     |           |           '----[ R 10kΩ ]-----.
     |           |                               |
-    |           |                               | (Cavo "Nero" Pinza)
+    |           |                               | (Cavo "-" Pinza)
     |           |                        .-------------.
     |           |                        |    PINZA    |
     |        A0 |<-----------------------|   SCT-013   |
-    |           |   (Cavo "Rosso" Pinza) '-------------'
+    |           |       (Cavo "+" Pinza) '-------------'
     '-----------'
 ```
 
