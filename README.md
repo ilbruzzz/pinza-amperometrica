@@ -27,7 +27,7 @@ Il dimensionamento del sensore di corrente è stato effettuato cercando il migli
     |           |                               | (Cavo "Nero" Pinza)
     |           |                        .-------------.
     |           |                        |    PINZA    |
-    |        A0 |<-----------------------|AMPEROMETRICA|
+    |        A0 |<-----------------------|   SCT-013   |
     |           |   (Cavo "Rosso" Pinza) '-------------'
     '-----------'
 ```
