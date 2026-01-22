@@ -12,17 +12,24 @@ Il dimensionamento del sensore di corrente è stato effettuato cercando il migli
 ## Schema di Collegamento
 
 ```text
-       ESP8266 3.3V
-            |
-          [R1] 10kΩ
-            |
- +----------+----------+------- < Filo 1 SCT-013 (Bias)
- |          |          |
-[C1]       [R2]       ( ) Jack 3.5mm
-10uF       10kΩ       ( )
- |          |          |
- |          |          +------- > Filo 2 SCT-013 (Segnale) ---> PIN A0 (ADC)
-GND        GND
+    .-----------.
+    |           |
+    |      3.3V |-------[ R 10kΩ ]-------+
+    |           |                        |
+    |           |                      __|__
+    |           |                  C1  /////  (Lato +)
+    |           |                  10uF____   (Condensatore)
+    |           |                        |    (Lato -)
+    |       GND |-----------+------------+
+    |           |           |
+    |           |           '----[ R 10kΩ ]-----.
+    |           |                               |
+    |           |                               | (Cavo "Nero" Pinza)
+    |           |                        .-------------.
+    |           |                        |    PINZA    |
+    |        A0 |<-----------------------|AMPEROMETRICA|
+    |           |   (Cavo "Rosso" Pinza) '-------------'
+    '-----------'
 ```
 
 ## Codice
