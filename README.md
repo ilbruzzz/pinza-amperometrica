@@ -102,4 +102,4 @@ L'installazione prevede l'inserimento del sensore nel quadro elettrico generale.
 # Galleria
 | Quadro Elettrico (Raw) | Installazione Completa | Visualizzazione Hassio |
 | :---: | :---: | :---: |
-| <img src="image/Quadro_elettrico_(raw).jpeg" width="300" alt="Quadro Raw"> | <img src="image/Quadro_elettrico_completo.jpeg" width="300" alt="Quadro Completo"> | <img src="image/Visualizzazione_hassio.png" width="300" alt="Hassio"> |
+| <img src="image/Quadro_elettrico_(raw).jpeg" width="300" alt="Quadro Raw"> | <img src="image/Quadro_elettrico_completo.jpeg" width="300" alt="Quadro Completo"> | <img src="image/Dashboard.png" width="300" alt="Hassio"> |
