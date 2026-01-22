@@ -92,6 +92,18 @@ sensor:
     unit_of_measurement: kWh
     icon: mdi:counter
 ```
+### Costo giornaliero
+
+```yaml
+- platform: template
+    name: "Costo Giornaliero"
+    unit_of_measurement: "€"
+    accuracy_decimals: 2
+    icon: "mdi:currency-eur"
+    update_interval: 10s
+    lambda: |-
+      return id(energy_today).state * "metti il tuo costo al kWh";
+```
 
 # Installazione e sicurezza
 L'installazione prevede l'inserimento del sensore nel quadro elettrico generale.
